@@ -1,3 +1,4 @@
+#replies to a particular user's message with a random quote messing with them
 import discord
 import os
 import random
@@ -23,7 +24,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
+    #can adjust message and user 
     if str(message.author) == "Message Author Username":
       cringe_selecter = random.randrange(1, 5)
       if (cringe_selecter == 1):
